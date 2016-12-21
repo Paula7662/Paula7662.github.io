@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body, html {
+    height: 100%;
+}
+
+.parallax { 
+    /* The image used */
+    background: url("https://1.bp.blogspot.com/-sAEoBnPoypE/UfwgxTUmquI/AAAAAAAAIPo/iyM_RaVSwtw/s1600/binario.jpg");
+    background-attachment: fixed;
+    overflow: hidden;
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body{
+    background:#3CF;
+}
+
+ 
+nav ul li:hover > ul {
+    display: block;
+}
+img{
+    width:1000%;
+    background-size: cover;
+}
+nav ul {
+    width: 100%;
+	background: #efefef; 
+	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+	box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+	padding: 0 100px;
+	list-style: none;
+	position: fixed;
+	
+}
+	nav ul:after {
+		content: ""; clear: both; display: block;
+	}
+nav ul li {
+  float:right;
+    margin-left: 7%;
+}
+	nav ul li:hover {
+		background: #4b545f;
+		background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+		background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+		background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+	}
+		nav ul li:hover a {
+			color: #fff;
+		}
+	
+	nav ul li a {
+		display: block; padding: 25px 40px;
+		color: #757575; text-decoration: none;
+	}
+ 
+nav ul ul {
+	background: #5f6975; border-radius: 0px; padding: 0;
+	position: absolute; top: 100%;
+}
+	nav ul ul li {
+		float: none; 
+		border-top: 1px solid #6b727c;
+		border-bottom: 1px solid #575f6a;
+		position: relative;
+	}
+		nav ul ul li a {
+			padding: 15px 40px;
+			color: #fff;
+		}	
+			nav ul ul li a:hover {
+				background: #4b545f;
+			}
+nav ul ul ul {
+	position: absolute; left: 100%; top:0;
+}
+
+header{
+    text-align: center;
+    display:block;
+    width:auto;
+    padding:10px 0px;
+}
+
+section{
+    text-align: center;
+    overflow: auto;
+            /* Definimos el padding inferior:
+               50px del pie de pagina mas 10px de separacion
+            */
+    padding-bottom: 90px;
+            /* Definimos un padding superior */
+    padding-top:50px;
+}
+
+.enlaceboton {    
+   font-family: 'Unica One', cursive; 
+   font-size: 10pt; 
+   font-weight: bold; 
+   padding: 4px; 
+   background-color:white; 
+   color: #666666; 
+   text-decoration: none; 
+} 
+.enlaceboton:link, 
+.enlaceboton:visited { 
+   border-top: 1px solid #cccccc; 
+   border-bottom: 2px solid #666666; 
+   border-left: 1px solid #cccccc; 
+   border-right: 2px solid #666666; 
+} 
+.enlaceboton:hover { 
+    border-bottom: 1px solid #cccccc; 
+   border-top: 2px solid #666666; 
+   border-right: 1px solid #cccccc; 
+   border-left: 2px solid #666666; 
+}
+
+body {
+    
+  background-color: white;
+  color: #222;
+  font-family: 'Unica One', cursive;
+  font-weight: 300;
+  font-size: 15px;
+  font-family: 'Unica One', cursive;
+}
+
+
+#banner{
+        
+		
+	}
+/*http://www.umsl.edu/~centerforhumanities/files/images/piano.jpg*/
+
+
+
+#columna_derecha{
+    
+   background-color: black;
+    width:300px;
+    float:right;
+    margin-left: 5px;
+    margin-right:10px;
+    font-family: 'Unica One', cursive;
+    height:511px;
+    width:300px; 
+    overflow-y:scroll;
+}
+#columna_izquierda{
+    
+    background-color:black;
+    float:left;
+    margin-left: 10px;
+    margin-right:15px;
+    font-family: 'Unica One', cursive;
+    height:561px;
+    width:300px; 
+    
+
+    
+    
+}
+/*#comlumna_central{
+    width:auto;
+    background-color:black;
+   margin-left:  70px;
+    margin-right: 290px;
+    font-family: 'Unica One', cursive;
+    font-size: 20px;
+ 
+
+}*/
+p{
+    color:white;
+    font-family: 'Unica One', cursive;
+    font-size: 20px;
+    margin:7%;
+    text-align: center;
+    transform: translate(10%)
+    
+}
+h1{
+    color:white;
+     font-family: 'Unica One', cursive;
+    font-size: 40px;
+    text-align: center;    
+    margin-top: 2%;
+}
+h2{
+    color:white;
+     font-family: 'Unica One', cursive;
+    font-size: 40px;
+}
+li{
+    font-size: 18px;
+    color:white;
+}
+ul{
+    list-style:none;
+}
+
+
+
+
+
+
+
+
+/*slider*/
+.slider{
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+}
+ 
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: ease-out;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width:100%;
+}
+
+@keyframes cambio{
+    0% { margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+/*fin slider*/
+
+.Enlace_imagen{
+    width: 55%;
+    position:static;
+    left:50%;
+    transform: translate(40%);
+}
+
+
+.Enlace_imagen div{
+   display: inline-block;
+    align-content: center;
+    margin:auto;
+}
+
+
+
+
+
+
+
+        /* Div que engloba el contenido de la página menos el footer */
+        
+    
+        footer {
+            position:relative;
+            width: 100%;
+            /* Altura total del footer en px con valor negativo */
+            margin-top: -50px;
+            /* Altura del footer en px.
+            */
+            height: 200px;
+            padding:5px 0px;
+            clear: both;
+            background: rgba(0,0,0,0.7);
+            text-align: center;
+            background: url("http://rahwan.wap.sh/images/footer-spectrum.jpg") no-repeat center;
+            opacity: 0.65;
+         
+
+        }
+.define div{
+ display: inline-block;
+    align-content: center;
+    margin:1%;
+    transform: translateY(70%);
+}
+
+#banner2{
+    position: absolute;
+    margin-top: 10%;
+    position:inherit;
+    padding: 110px;
+    background-color: white;
+    opacity: 0.30;
+    background-size: cover;
+	}
+
+
+#UltimasOfertas img{
+    margin-bottom: 3%;
+   
+}
+#UltimasOfertas li{
+    margin-bottom: 5%;
+   
+}
+.Contacto{
+    margin-top:-9%;
+    margin-left: 5%;
+}
+.Contacto li{
+    text-align: left;
+    width: 20%;
+    font-size: 90%;
+    margin: 0.5%;
+}
+.Contacto b{
+    color:deeppink
+    }
